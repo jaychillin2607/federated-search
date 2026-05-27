@@ -1,0 +1,82 @@
+[
+  {
+    "id": "feature_cart",
+    "category": "feature",
+    "title": "Cart",
+    "description": "View and manage items in your shopping cart before checkout.",
+    "keywords": ["feature", "cart", "checkout", "shopping"],
+    "deeplink": "/app/cart"
+  },
+  {
+    "id": "feature_workout_log",
+    "category": "feature",
+    "title": "Workout Log",
+    "description": "Track sets, reps and personal records across your training history.",
+    "keywords": ["feature", "workout", "log", "tracker", "history"],
+    "deeplink": "/app/workout-log"
+  },
+  {
+    "id": "feature_my_bookings",
+    "category": "feature",
+    "title": "My Bookings",
+    "description": "See upcoming and past bookings for turfs, gyms and classes.",
+    "keywords": ["feature", "bookings", "reservations", "schedule"],
+    "deeplink": "/app/bookings"
+  },
+  {
+    "id": "feature_profile",
+    "category": "feature",
+    "title": "Profile",
+    "description": "Update your personal details, photo and fitness goals.",
+    "keywords": ["feature", "profile", "account", "settings"],
+    "deeplink": "/app/profile"
+  },
+  {
+    "id": "feature_notifications",
+    "category": "feature",
+    "title": "Notifications",
+    "description": "Configure push, email and SMS notification preferences.",
+    "keywords": ["feature", "notifications", "alerts", "preferences"],
+    "deeplink": "/app/notifications"
+  },
+  {
+    "id": "feature_membership",
+    "category": "feature",
+    "title": "Membership",
+    "description": "Manage your membership plan, renewals and benefits.",
+    "keywords": ["feature", "membership", "plan", "subscription"],
+    "deeplink": "/app/membership"
+  },
+  {
+    "id": "feature_refer_a_friend",
+    "category": "feature",
+    "title": "Refer a Friend",
+    "description": "Invite friends and earn rewards when they sign up.",
+    "keywords": ["feature", "refer", "invite", "rewards", "friend"],
+    "deeplink": "/app/refer"
+  },
+  {
+    "id": "feature_settings",
+    "category": "feature",
+    "title": "Settings",
+    "description": "App preferences, language, theme and privacy settings.",
+    "keywords": ["feature", "settings", "preferences", "config"],
+    "deeplink": "/app/settings"
+  },
+  {
+    "id": "feature_help_support",
+    "category": "feature",
+    "title": "Help & Support",
+    "description": "FAQs, chat with support and report an issue.",
+    "keywords": ["feature", "help", "support", "faq", "contact"],
+    "deeplink": "/app/help"
+  },
+  {
+    "id": "feature_class_schedule",
+    "category": "feature",
+    "title": "Class Schedule",
+    "description": "Browse the full weekly schedule of group fitness classes.",
+    "keywords": ["feature", "schedule", "classes", "timetable"],
+    "deeplink": "/app/schedule"
+  }
+]

@@ -1,0 +1,78 @@
+services:
+  opensearch:
+    image: opensearchproject/opensearch:2.13.0
+    container_name: fs-opensearch
+    environment:
+      - discovery.type=single-node
+      - DISABLE_SECURITY_PLUGIN=true
+      - bootstrap.memory_lock=true
+      - "OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:9200/_cluster/health | grep -E '\"status\":\"(green|yellow)\"'"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: fs-postgres
+    environment:
+      POSTGRES_DB: gym
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d gym"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  server:
+    build:
+      context: .
+      args:
+        BINARY: server
+    container_name: fs-server
+    environment:
+      PORT: 8080
+      LOG_LEVEL: info
+      OPENSEARCH_URL: http://opensearch:9200
+      OPENSEARCH_INDEX: federated_search
+      POSTGRES_DSN: postgres://postgres:postgres@postgres:5432/gym?sslmode=disable
+      INTERNAL_API_KEY: devkey
+    ports:
+      - "8080:8080"
+    depends_on:
+      opensearch:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+
+  indexer:
+    build:
+      context: .
+      args:
+        BINARY: indexer
+    container_name: fs-indexer
+    environment:
+      LOG_LEVEL: info
+      OPENSEARCH_URL: http://opensearch:9200
+      OPENSEARCH_INDEX: federated_search
+      POSTGRES_DSN: postgres://postgres:postgres@postgres:5432/gym?sslmode=disable
+      INTERNAL_API_KEY: devkey
+      INDEXER_INTERVAL_SECONDS: 60
+      INDEXER_BATCH_SIZE: 500
+    depends_on:
+      opensearch:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy

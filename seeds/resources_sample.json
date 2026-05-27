@@ -1,0 +1,146 @@
+[
+  {
+    "id": "turf_sample_1",
+    "category": "turf",
+    "title": "Green Field Turf",
+    "description": "Premium 5-a-side football turf with floodlights.",
+    "keywords": ["turf", "football", "5-a-side"],
+    "deeplink": "/app/turfs/sample-1",
+    "metadata": { "address": "MG Road, Bengaluru", "price_per_hour": 1200 }
+  },
+  {
+    "id": "turf_sample_2",
+    "category": "turf",
+    "title": "Cricket Pro Turf",
+    "description": "Astroturf cricket pitch with bowling machines.",
+    "keywords": ["turf", "cricket", "pitch"],
+    "deeplink": "/app/turfs/sample-2",
+    "metadata": { "address": "HSR Layout", "price_per_hour": 900 }
+  },
+  {
+    "id": "turf_sample_3",
+    "category": "turf",
+    "title": "Box Cricket Arena",
+    "description": "Indoor box cricket facility, open all night.",
+    "keywords": ["turf", "box cricket"],
+    "deeplink": "/app/turfs/sample-3",
+    "metadata": { "address": "Whitefield", "price_per_hour": 1500 }
+  },
+  {
+    "id": "gym_sample_1",
+    "category": "gym",
+    "title": "CrossFit Downtown",
+    "description": "Premier CrossFit box with certified L2 coaches.",
+    "keywords": ["gym", "crossfit", "strength"],
+    "deeplink": "/app/gyms/sample-1",
+    "metadata": { "address": "Indiranagar", "monthly_price": 4500, "rating": 4.7 }
+  },
+  {
+    "id": "gym_sample_2",
+    "category": "gym",
+    "title": "Iron Paradise",
+    "description": "Classic bodybuilding gym with heavy free weights.",
+    "keywords": ["gym", "bodybuilding", "weights"],
+    "deeplink": "/app/gyms/sample-2",
+    "metadata": { "address": "Koramangala", "monthly_price": 2500, "rating": 4.3 }
+  },
+  {
+    "id": "gym_sample_3",
+    "category": "gym",
+    "title": "Yoga & Wellness Studio",
+    "description": "Hatha, Vinyasa and meditation classes daily.",
+    "keywords": ["gym", "yoga", "wellness", "meditation"],
+    "deeplink": "/app/gyms/sample-3",
+    "metadata": { "address": "Jayanagar", "monthly_price": 3000, "rating": 4.8 }
+  },
+  {
+    "id": "gym_sample_4",
+    "category": "gym",
+    "title": "Boxing Club 24/7",
+    "description": "Boxing and kickboxing classes with sparring sessions.",
+    "keywords": ["gym", "boxing", "kickboxing", "martial arts"],
+    "deeplink": "/app/gyms/sample-4",
+    "metadata": { "address": "Marathahalli", "monthly_price": 3500, "rating": 4.5 }
+  },
+  {
+    "id": "coach_sample_1",
+    "category": "coach",
+    "title": "Arjun Mehta",
+    "description": "Certified CrossFit L2 coach with 8 years of experience.",
+    "keywords": ["coach", "crossfit", "strength"],
+    "deeplink": "/app/coaches/sample-1",
+    "metadata": { "specialization": "CrossFit", "hourly_rate": 1500, "experience_years": 8 }
+  },
+  {
+    "id": "coach_sample_2",
+    "category": "coach",
+    "title": "Priya Nair",
+    "description": "Yoga and mobility specialist, RYT-500 certified.",
+    "keywords": ["coach", "yoga", "mobility"],
+    "deeplink": "/app/coaches/sample-2",
+    "metadata": { "specialization": "Yoga", "hourly_rate": 1200, "experience_years": 10 }
+  },
+  {
+    "id": "coach_sample_3",
+    "category": "coach",
+    "title": "Rohan Singh",
+    "description": "Former national-level boxer, now coaching beginners and pros.",
+    "keywords": ["coach", "boxing", "combat"],
+    "deeplink": "/app/coaches/sample-3",
+    "metadata": { "specialization": "Boxing", "hourly_rate": 1800, "experience_years": 12 }
+  },
+  {
+    "id": "coach_sample_4",
+    "category": "coach",
+    "title": "Neha Verma",
+    "description": "Sports nutritionist and strength coach for endurance athletes.",
+    "keywords": ["coach", "nutrition", "endurance"],
+    "deeplink": "/app/coaches/sample-4",
+    "metadata": { "specialization": "Nutrition", "hourly_rate": 2000, "experience_years": 6 }
+  },
+  {
+    "id": "class_sample_1",
+    "category": "class",
+    "title": "Sunrise Yoga",
+    "description": "60-minute Hatha yoga class for all levels.",
+    "keywords": ["class", "yoga", "morning"],
+    "deeplink": "/app/classes/sample-1",
+    "metadata": { "duration_min": 60, "level": "Beginner" }
+  },
+  {
+    "id": "class_sample_2",
+    "category": "class",
+    "title": "CrossFit WOD",
+    "description": "High-intensity workout of the day at CrossFit Downtown.",
+    "keywords": ["class", "crossfit", "wod"],
+    "deeplink": "/app/classes/sample-2",
+    "metadata": { "duration_min": 60, "level": "Intermediate" }
+  },
+  {
+    "id": "class_sample_3",
+    "category": "class",
+    "title": "Boxing Fundamentals",
+    "description": "Stance, footwork and combinations for new boxers.",
+    "keywords": ["class", "boxing", "fundamentals"],
+    "deeplink": "/app/classes/sample-3",
+    "metadata": { "duration_min": 45, "level": "Beginner" }
+  },
+  {
+    "id": "class_sample_4",
+    "category": "class",
+    "title": "Spin Cycle",
+    "description": "Indoor cycling with music-driven intervals.",
+    "keywords": ["class", "spin", "cardio", "cycling"],
+    "deeplink": "/app/classes/sample-4",
+    "metadata": { "duration_min": 45, "level": "All levels" }
+  },
+  {
+    "id": "class_sample_5",
+    "category": "class",
+    "title": "HIIT Express",
+    "description": "30-minute high-intensity interval training class.",
+    "keywords": ["class", "hiit", "cardio"],
+    "deeplink": "/app/classes/sample-5",
+    "metadata": { "duration_min": 30, "level": "Intermediate" }
+  }
+]
